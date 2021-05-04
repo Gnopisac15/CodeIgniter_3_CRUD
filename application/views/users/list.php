@@ -15,7 +15,7 @@
     <a class="navbar-brand" href="#" style="font-size:30px">CodeIgniter</a>
   </nav>
     <div class="container mt-5">
-    <h3 class="display-6">List of Users  <span><a href="<?=base_url()?>user/create" class="btn btn-outline-primary  mb-3" style="height:40px;width:100px;float:right">Add</a></span></h3>
+    <h3 class="display-6">List of Users  <span><a href="<?=base_url('index.php/')?>user/create" class="btn btn-outline-primary  mb-3" style="height:40px;width:100px;float:right">Add</a></span></h3>
         <?php if(!empty($this->session->flashdata('message'))){
             echo "<div class='alert alert-success mt-3'>".$this->session->flashdata('message')."</div>";
         }?>
@@ -39,8 +39,8 @@
         <td><?php echo $row['name'];?></td>
         <td><?php echo $row['email'];?></td>
         <td><?php echo $row['address'];?></td>
-        <td><a href="<?=base_url('users/edit/'.$row['id']);?>" class="btn btn-outline-success">Edit</a>
-        <a href="<?=base_url('users/delete/'.$row['id']);?>" class="btn btn-outline-danger">Delete</a>
+        <td><a href="<?=base_url('index.php/users/edit/'.$row['id']);?>" class="btn btn-outline-success">Edit</a>
+        <a href="<?=base_url('index.php/users/delete/'.$row['id']);?>" class="btn btn-outline-danger">Delete</a>
         
         </td>
     </tr>

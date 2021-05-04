@@ -14,7 +14,7 @@
     <a class="navbar-brand" href="#" style="font-size:30px">CodeIgniter</a>
   </nav>
     <div class="container">
-        <form  class="col-sm-4 mx-auto" action="<?php echo base_url('users/update/'.$users['id']);?>" method="post"required>
+        <form  class="col-sm-4 mx-auto" action="<?php echo base_url('index.php/users/update/'.$users['id']);?>" method="post"required>
             <h3 class="display-4 mt-5 text-center">Update Form</h3>
             <div class="form-group mt-4">
                 <label>Name</label>
@@ -34,7 +34,7 @@
             </div>
             <div class="footer mt-4">
             <button type="submit" class="btn btn-outline-primary">Add</button>
-            <a href="<?=base_url('user')?>" class="btn btn-outline-info">Cancel</a>
+            <a href="<?=base_url('index.php/user')?>" class="btn btn-outline-info">Cancel</a>
             </div>
         </form>
     </div>

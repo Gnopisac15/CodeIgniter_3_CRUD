@@ -33,7 +33,7 @@
             </div>
             <div class="footer mt-4">
             <button type="submit" class="btn btn-outline-primary">Add</button>
-            <a href="<?=base_url()?>user" class="btn btn-outline-info">Cancel</a>
+            <a href="<?=base_url('index.php/')?>user" class="btn btn-outline-info">Cancel</a>
             </div>
         </form>
     </div>

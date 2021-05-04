@@ -39,7 +39,7 @@ class User extends CI_Controller{
             $this->User_model->add_user($formData);
 
             $this->session->set_flashdata('message','Data has been successfully added ');
-            redirect(base_url('user'));
+            redirect(base_url('index.php/user'));
         }else {
             $this->load->view('users/create');
         }
@@ -64,7 +64,7 @@ class User extends CI_Controller{
         $this->User_model->updateUser($data, $id);
 
         $this->session->set_flashdata('message','Data has been successfully modified');
-        redirect(base_url('user'));
+        redirect(base_url('index.php/user'));
     }
 
     public function delete($id){
@@ -72,7 +72,7 @@ class User extends CI_Controller{
         $this->load->model('User_model');
         $this->User_model->deleteUser($id);
         $this->session->set_flashdata('message','Data has been successfully deleted ');
-        redirect(base_url('user'));
+        redirect(base_url('index.php/user'));
     }
 
 }
